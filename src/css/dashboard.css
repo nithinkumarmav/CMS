@@ -1,0 +1,165 @@
+.dashboard-sidebar-container {
+    display: flex;
+    background-color: #e8e8e8;
+}
+
+.dashboard-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.dashboard-boxes>p {
+    padding: 50px 0px !important;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    text-align: center;
+    width: 600px;
+    padding: 0;
+    text-transform: uppercase;
+
+ letter-spacing: 0.4px;
+ background-color: #e7ebee;
+ border-style: solid;
+ border-width: 2px 2px 2px 2px;
+ border-color: rgba(255, 255, 255, 0.333);
+
+ transform: translate(0px, 0px) rotate(0deg);
+ transition: 0.2s;
+ box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+ z-index: 1;
+ border-radius: 9px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ flex-direction: column;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+    font-size: 26px;
+    font-weight: bolder;
+    margin: 5px 0;
+    white-space: nowrap;
+}
+
+.count {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.upload-button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.upload-button .MuiSvgIcon-root {
+    transition: transform 0.3s ease;
+}
+
+.upload-button:hover .MuiSvgIcon-root {
+    transform: rotate(45deg);
+}
+
+.contract-received {
+    background: linear-gradient(135deg, #fbd38d, #f68b1f);
+}
+
+.ai-agent-review{
+    background: linear-gradient(135deg, #fcc2c2, #f28a8a);
+}
+
+.manual-review {
+    background: linear-gradient(135deg, #b4f8c8, #2ecc71);
+}
+
+.approved {
+    background: linear-gradient(135deg, #ffeac3, #f1c40f);
+}
+
+
+
+
+  
+  
+/* For mobile responsiveness */
+@media (max-width: 1400px) {
+    .card {
+        width: 500px;
+    }
+
+    .dashboard-boxes>p {
+        padding: 40px 0px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 380px;
+    }
+
+    .dashboard-boxes>p {
+        padding: 30px 0px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card {
+        width: 350px;
+    }
+
+    .dashboard-boxes>p {
+        padding: 30px 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .dashboard-container {
+        margin-top: 40px;
+    }
+
+    .dashboard-boxes>p {
+        padding: 15px 0px !important;
+        font-size: 16px;
+    }
+}
